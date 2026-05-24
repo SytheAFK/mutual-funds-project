@@ -1,7 +1,16 @@
 import os
+import gdown
 import pandas as pd
 import plotly.express as px
 from dash import Dash, dcc, html, Input, Output, callback
+
+# Download CSV if not already present
+if not os.path.exists("mtual_fund_data.csv"):
+    gdown.download(
+        "https://drive.google.com/uc?id=15kV9YfMGfjaEwiXyq1dQL1RSBLbCd1ro",
+        "mutual_fund_data.csv",
+        quiet=False
+    )
 
 # ── Data prep ────────────────────────────────────────────────────────────────
 
