@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import plotly.express as px
 from dash import Dash, dcc, html, Input, Output, callback
@@ -254,4 +255,4 @@ def update_charts(selected_category):
     return f1, f2, f3, f4
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8050)), debug=False)
