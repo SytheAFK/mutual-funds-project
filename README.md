@@ -92,3 +92,12 @@ Go to `http://127.0.0.1:8050`
 - **Source:** [India's Ultimate Mutual Fund Dataset](https://www.kaggle.com/datasets/tharunreddy2911/mutual-fund-data) — Kaggle
 - **Records:** 16,383 fund schemes (8,216 active)
 - **Key columns used:** AMC, Scheme_Category, Scheme_Type, Average_AUM_Cr, Launch_Date, NAV
+
+---
+
+## 🧠 What I Learned
+
+- Exploratory data analysis with Pandas — handling nulls, groupby aggregations, datetime parsing
+- Building interactive charts with Plotly Express
+- Structuring a multi-chart Dash app with `html` and `dcc` components
+- Using Dash `@callback` to wire dropdown filters to multiple charts simultaneously
